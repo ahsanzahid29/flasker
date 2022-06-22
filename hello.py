@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hellos, World!</p>"
 
 @app.route('/hello')
 def hello():
@@ -18,7 +18,7 @@ def user(name):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template("404.html"),404
+    return render_template("base.html"),404
 #internal server error 
 @app.errorhandler(500)
 def server_not_found(e):

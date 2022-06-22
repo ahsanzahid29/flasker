@@ -1,5 +1,8 @@
-<h1>Hello {{ name }} from template</h1>
+{% extends 'base.html' %}
+{% block content %}
+<h1>Hello {{ name }} from templates</h1>
 <p>{{stuff|safe }}</p>
+{% endblock %}
 {# <h1>Hello {{ name | upper }} from template</h1> #}
 {# <h1>Hello {{ name | capitalize }} from template</h1> #}
 {# <h1>Hello {{ name | safe}} from template</h1> #}
